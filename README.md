@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# 허민
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 3주차 (2023.03.16)
 
-## Available Scripts
+### 1 리액트:사용자 인터페이스를 만들기 위한 자바스크립트 라이브러리
 
-In the project directory, you can run:
+-SPA를 쉽고 빠르게 만들 수 있도록 해주는 도구
 
-### `npm start`
+### 2 리액트의 장점
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2.1 빠른 업테이트와 렌더링 속도
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-Virtual DOM :DOM 조작이 비효율적인 이유로 속도가 느리기 때문에 고안된 방법
 
-### `npm test`
+-DOM은 동기식, Virtual DOM은 비동기식 방법으로 렌더링
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+\*동기식 : 서버와 클라이언트 사이에 전체 데이터를 렌더링
 
-### `npm run build`
+\*비동기식 : 서버와 클라이언트 사이에 필요한 데이터만 렌더링
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2.2 컴포넌트 기반구조
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-리액트의 모든 페이지는 컴포넌트로 구성
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-하나의 컴포넌트는 다른 여러 개의 컴포넌트의 조합으로 구성
 
-### `npm run eject`
+2.3 재사용성
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-반복적인 작업을 줄여주기 때문에 생산성을 높여준다 -유지보수가 용이
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 3 리액트의 단점
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- 방대한 학습량 - 전공자에게는 해당 안될듯.. html,css등의 개념이 있기 때문에
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- 높은 상태 관리 복잡도
 
-## Learn More
+## 2주차 (2023.03.09)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+HTML:웹 사이트의 뼈대를 구성하는 테그
+CSS: 웹 사이트의 세세한 부분까지의 디자인을 표현
+JS: 동적인 부분 표현
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+자바스크립트의 자료형
+var 중복선언 가능, 재할당가능
+let 중복선언 불가능, 재할당 가능
+const 중복선언 불가능, 재할당 불가능
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+자바스크립트의 연산자
+대입연산자, 산술연산자, 증감 연산자
