@@ -43,7 +43,7 @@ const styles = {
             </div>
 
             <div style={styles.contentContainer}>
-                <span style={styles.nameText}>{prop.name}</span>
+                <span style={styles.nameText}>{props.name}</span>
                 <span style={styles.commentText}>{props.comment}</span>
             </div>
         </div>
