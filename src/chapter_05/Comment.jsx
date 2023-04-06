@@ -43,8 +43,8 @@ const styles = {
             </div>
 
             <div style={styles.contentContainer}>
-                <span style={styles.nameText}>허 민</span>
-                <span style={styles.commentText}>내가 만든 첫 컴포넌트!</span>
+                <span style={styles.nameText}>{prop.name}</span>
+                <span style={styles.commentText}>{props.comment}</span>
             </div>
         </div>
     );
