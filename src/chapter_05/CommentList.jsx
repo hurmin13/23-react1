@@ -1,10 +1,11 @@
 import React from "react";
+import Comment from "./Comment"
 
 function Comment(props){
     return(
         <div>
-            <h1>내가 만든 첫 컴포넌트.</h1>
+            <Comment/>
         </div>
     )
 }
-export default Comment
+export default CommentList
