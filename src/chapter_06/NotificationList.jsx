@@ -1,6 +1,5 @@
 import React from "react";
-import Notification from "./notification";
-
+import Notification from "./Notification";
 const reservedNotifications =[
     {
         id: 1,
@@ -28,17 +27,17 @@ class NotificationList extends React.Component{
     }
 
     componentDidMount() {
-        const {notification} = this.state;
+        const {notifications} = this.state;
         timer = setInterval(() =>{
-            if(notification.length < reservedNotifications.length){
-                const index = notification.length;
-                notification.push(reservedNotifications[index]);
+            if(notifications.length < reservedNotifications.length){
+                const index = notifications.length;
+                notifications.push(reservedNotifications[index]);
                 this.setState({
-                    notification: notification,
+                    notifications: notifications,
                 });
             } else {
                 this.setState({
-                    notification: [],
+                    notifications: [],
                 });
                 clearInterval(timer);
             }
@@ -50,4 +49,21 @@ class NotificationList extends React.Component{
             clearInterval(timer);
         }
     }
+    render() {
+        return (
+            <div>
+                {this.state.notifications.map((notification) => {
+                    return (
+                        <Notification
+                            key={notification.id}
+                            id={notification.id}
+                            message={notification.message}
+                        />
+                    );
+                })}
+            </div>
+        );
+    }
 }
+
+export default NotificationList;
