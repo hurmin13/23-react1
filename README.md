@@ -1,5 +1,53 @@
 # 허민
 
+## 9주차(2023.04.27)
+
+### 이벤트 처리하기
+
+```c
+<button onClick={activate}>
+  Activate
+</button>
+```
+
+이벤트가 발생했을 떄 해당 이벤트를 처리하는 함수를 "이벤트 핸들러"라고 한다. 또는 이벤트가 발생하는 것을 계속 듣고 있다는 의미로 "이벤트 리스너"라고도 한다.
+
+함수를 정의할 때는 파라미터 혹은 매개변수, 함수를 사용할 때는 아귀먼트 혹은 인자라고 부른다
+
+```c
+<button onClick={(event)=>this.deleteItem(id,event)}>삭제하기</button>
+
+<button onClick={this.deleteItem.bind(this,id)}>삭제하기</button>
+```
+
+-동일한 역할이지만 하나는 화살표 함수를 다른 하나는 bind를 사용
+
+-event라는 매개변수는 리액트의 이벤트 객체를 의미
+
+-첫번째 매개변수는 id이고 두번째는 event가 전달
+
+### 조건부 렌더링
+
+```c
+function Greeting(props){
+  const isLiggedIn = props.isLoggedIn;
+  if(isLoggedIn){
+    return <UserGreeting/>;
+  }
+  return <GusetGreeting/>;
+}
+```
+
+- props로 전달 받은 isLoggedIn이 true이면 <UserGreeting/>을, false면 <GusetGreeting/>을 return
+
+- 이와 같은 렌더링을 조건부 렌더링 이라고 한다.
+
+- 렌더링해야 될 컴포넌트를 변수처럼 사용하는 방법이 엘리먼트 변수
+
+## 8주차(2023.04.20)
+
+중간고사
+
 ## 7주차(2023.04.13)
 
 ### 1 훅 : State와 생명주기 기능에 갈고리를 걸어 원하는 시점에 정해진 함수를 실행되도록 만든 함수
