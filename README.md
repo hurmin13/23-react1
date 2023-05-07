@@ -1,5 +1,95 @@
 # 허민
 
+## 10주차(2023.05.04)
+
+### 1.1 리스크: 자바스크립트의 변수나 객체를 하나의 변수로 묶어 놓은 배열과 같은 것입니다.
+
+### 1.2 키: 각 객체나 아이템을 구분할 수 있는 고유한 값을 의미합니다.
+
+### 2 여러 개의 컴포넌트 렌더링하기
+
+- 같은 컴포넌트를 화면에 반복적으로 나타내야 할 경우 배열에 들어 있는 엘리먼트를 map() 함수를 이용하여 렌더링
+
+### 3 기본적인 리스트 컴포넌트
+
+### 4 리스트의 키: 리스트에서 아이템을 구별하기 위한 고유한 문자열
+
+- 이 키는 리스트에서 어떤 아이템이 변경 추가 또는 제거되었는지 구분하기 위해 사용
+
+- 키는 같은 리스트에 있는 엘리먼트 사이에서만 고유한 값이면 된다.
+
+### 5 폼: 일반적으로 사용자로부터 입력을 받기위한 양식에서 많이 사용
+
+ex)
+
+```c
+<form>
+  <label>
+    이름:
+    <input type ="text" name="name"/>
+  </label>
+  <button type="submit">제출</button>
+</form>
+```
+
+<form>
+  <label>
+    이름:
+    <input type ="text" name="name"/>
+  </label>
+  <button type="submit">제출</button>
+</form>
+
+### 6 제어 컴포넌트 : 사용자가 입력한 값에 접근하고 제어할 수 있도록 해주는 컴포넌트
+
+### 1. textarea 태그
+
+```c
+<textarea>
+  안녕하세용
+</textarea>
+```
+
+<textarea>
+  안녕하세용
+</textarea>
+
+### 2. select 태그
+
+```c
+<select>
+  <option value="apple">사과</option>
+  <option value="banana">바나나</option>
+  <option value="grape">포도</option>
+</select>
+```
+
+<select>
+  <option value="apple">사과</option>
+  <option value="banana">바나나</option>
+  <option value="grape">포도</option>
+</select>
+
+### 3. File input 태그 : 그값이 읽기 전용이기 때문에 리액트에서는 비제어 컴포넌트가 된다
+
+```c
+<input type="file"/>
+```
+
+### 4. Input Null Value
+
+- 제어 컴포넌트에 value prop을 정해진 값으로 넣으면 코드를 수정하지 않는 한 입력값을 바꿀 수 없다.
+
+- 만약 value prop은 넣되 자유롭게 입력할 수 있게 만들고 싶다면 값이 undefined 또는 null을 넣어주면 된다.
+
+```c
+ReactDOM.render(<input value="hi"/>,rootNode);
+
+setTimeout(function(){
+    ReactDOM.render(<input value={null}/>,rootNode);
+},1000);
+```
+
 ## 9주차(2023.04.27)
 
 ### 이벤트 처리하기
