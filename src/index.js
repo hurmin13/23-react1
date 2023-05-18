@@ -11,13 +11,14 @@ import NotificationList from './chapter_06/NotificationList';
 import Accommodate from './chapter_07/Accommodate';
 import ConfirmButton from './chapter_08/ConfirmButton';
 import Calculator from './chapter_12/Calculator';
+import ProfileCard from './chapter_13/ProfileCard';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ConfirmButton />
+    <ProfileCard />
   </React.StrictMode>
 );
 
